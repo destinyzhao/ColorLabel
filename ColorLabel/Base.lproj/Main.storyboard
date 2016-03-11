@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="OqL-MZ-AXe">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ik5-pb-PCV">
+                                <rect key="frame" x="20" y="84" width="280" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9k-be-Jr3">
+                                <rect key="frame" x="20" y="111" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QH3-OD-ILM">
+                                <rect key="frame" x="20" y="142" width="280" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ik5-pb-PCV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="1Af-Xv-Nbs"/>
+                            <constraint firstAttribute="trailing" secondItem="m9k-be-Jr3" secondAttribute="trailing" constant="20" id="Dqb-g5-sCG"/>
+                            <constraint firstItem="QH3-OD-ILM" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Izr-ZW-wMj"/>
+                            <constraint firstItem="QH3-OD-ILM" firstAttribute="top" secondItem="m9k-be-Jr3" secondAttribute="bottom" constant="10" id="MXh-bm-Q1f"/>
+                            <constraint firstItem="m9k-be-Jr3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="Wyi-gv-3sZ"/>
+                            <constraint firstItem="ik5-pb-PCV" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="iDS-3G-BfN"/>
+                            <constraint firstAttribute="trailing" secondItem="ik5-pb-PCV" secondAttribute="trailing" constant="20" id="jrT-Ne-Orh"/>
+                            <constraint firstAttribute="trailing" secondItem="QH3-OD-ILM" secondAttribute="trailing" constant="20" id="s4K-ie-u9O"/>
+                            <constraint firstItem="m9k-be-Jr3" firstAttribute="top" secondItem="ik5-pb-PCV" secondAttribute="bottom" constant="10" id="ziP-jb-TmL"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="aTv-7E-r9d"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="deleteLineLabel" destination="m9k-be-Jr3" id="n4J-5b-RGo"/>
+                        <outlet property="imageLabel" destination="QH3-OD-ILM" id="HIm-FI-Tkx"/>
+                        <outlet property="textLabel" destination="ik5-pb-PCV" id="GeQ-p7-f0a"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="952" y="349"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WAt-l5-R7L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OqL-MZ-AXe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="p0B-ZP-EYq">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="fNw-bc-wf5"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2ur-BT-Xew" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="232" y="993"/>
+        </scene>
+    </scenes>
+</document>
